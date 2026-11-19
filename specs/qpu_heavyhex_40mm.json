@@ -1,0 +1,5554 @@
+{
+  "metadata": {
+    "chip_name": "QPU-100Q-HEAVYHEX-40MM",
+    "description": "100-Qubit Single-Planar-Layer Superconducting QPU on 40 mm High-Resistivity Silicon Die",
+    "technology": "Single Planar Superconducting Aluminum on High-Resistivity Float-Zone Silicon",
+    "gds_layer": [
+      1,
+      0
+    ],
+    "die_dimensions_um": [
+      40000.0,
+      40000.0,
+      500.0
+    ],
+    "substrate_material": "High-Resistivity Silicon (> 10 kOhm*cm)",
+    "substrate_dielectric_constant": 11.45,
+    "substrate_loss_tangent": 1e-06,
+    "core_region_um": [
+      6000.0,
+      6000.0,
+      34000.0,
+      34000.0
+    ],
+    "core_size_um": [
+      28000.0,
+      28000.0
+    ]
+  },
+  "heavy_hex_lattice": {
+    "total_qubits": 100,
+    "total_couplers": 123,
+    "average_connectivity": 2.46,
+    "max_degree": 3,
+    "unit_cell_pitch_um": [
+      2600.0,
+      2600.0
+    ],
+    "frequencies_GHz": {
+      "f_A": 4.85,
+      "f_B": 5.05,
+      "f_C": 5.25
+    },
+    "anharmonicity_MHz": -230.0,
+    "EJ_EC_ratio": 65.0,
+    "target_LJ_nH": 11.5,
+    "coupling_strength_J_MHz": 3.2,
+    "gate_times_ns": {
+      "1Q": 30.0,
+      "2Q_CR": 180.0
+    },
+    "logical_patches": {
+      "patch_1": {
+        "qubit_range": [
+          0,
+          32
+        ],
+        "num_qubits": 33,
+        "code_distance": 3
+      },
+      "patch_2": {
+        "qubit_range": [
+          33,
+          65
+        ],
+        "num_qubits": 33,
+        "code_distance": 3
+      },
+      "patch_3": {
+        "qubit_range": [
+          66,
+          99
+        ],
+        "num_qubits": 34,
+        "code_distance": 3
+      }
+    },
+    "qubits": [
+      {
+        "id": 0,
+        "col": 0,
+        "row": 0,
+        "x_um": 8300.0,
+        "y_um": 8300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          1,
+          10
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 0,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 1,
+        "col": 0,
+        "row": 1,
+        "x_um": 8300.0,
+        "y_um": 10900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          0,
+          2,
+          11
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 5,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 2,
+        "col": 0,
+        "row": 2,
+        "x_um": 8300.0,
+        "y_um": 13500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          1,
+          3,
+          12
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 10,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 3,
+        "col": 0,
+        "row": 3,
+        "x_um": 8300.0,
+        "y_um": 16100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          2,
+          4,
+          13
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 15,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 4,
+        "col": 0,
+        "row": 4,
+        "x_um": 8300.0,
+        "y_um": 18700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          3,
+          5,
+          14
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 20,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 5,
+        "col": 0,
+        "row": 5,
+        "x_um": 8300.0,
+        "y_um": 21300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          4,
+          6,
+          15
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 25,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 6,
+        "col": 0,
+        "row": 6,
+        "x_um": 8300.0,
+        "y_um": 23900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          5,
+          7,
+          16
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 30,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 7,
+        "col": 0,
+        "row": 7,
+        "x_um": 8300.0,
+        "y_um": 26500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          6,
+          8,
+          17
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 35,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 8,
+        "col": 0,
+        "row": 8,
+        "x_um": 8300.0,
+        "y_um": 29100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          7,
+          9,
+          18
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 40,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 9,
+        "col": 0,
+        "row": 9,
+        "x_um": 8300.0,
+        "y_um": 31700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          8,
+          19
+        ],
+        "readout_bus_id": 0,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 45,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 10,
+        "col": 1,
+        "row": 0,
+        "x_um": 10900.0,
+        "y_um": 8300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          0,
+          20
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 1,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 11,
+        "col": 1,
+        "row": 1,
+        "x_um": 10900.0,
+        "y_um": 10900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          12,
+          21,
+          1
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 6,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 12,
+        "col": 1,
+        "row": 2,
+        "x_um": 10900.0,
+        "y_um": 13500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          11,
+          2
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 11,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 13,
+        "col": 1,
+        "row": 3,
+        "x_um": 10900.0,
+        "y_um": 16100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          14,
+          23,
+          3
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 16,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 14,
+        "col": 1,
+        "row": 4,
+        "x_um": 10900.0,
+        "y_um": 18700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          13,
+          4
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 21,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 15,
+        "col": 1,
+        "row": 5,
+        "x_um": 10900.0,
+        "y_um": 21300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          16,
+          25,
+          5
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 26,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 16,
+        "col": 1,
+        "row": 6,
+        "x_um": 10900.0,
+        "y_um": 23900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          15,
+          6
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 31,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 17,
+        "col": 1,
+        "row": 7,
+        "x_um": 10900.0,
+        "y_um": 26500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          18,
+          27,
+          7
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 36,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 18,
+        "col": 1,
+        "row": 8,
+        "x_um": 10900.0,
+        "y_um": 29100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          17,
+          8
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 41,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 19,
+        "col": 1,
+        "row": 9,
+        "x_um": 10900.0,
+        "y_um": 31700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          29,
+          9
+        ],
+        "readout_bus_id": 1,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 46,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 20,
+        "col": 2,
+        "row": 0,
+        "x_um": 13500.0,
+        "y_um": 8300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          21,
+          30,
+          10
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 2,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 21,
+        "col": 2,
+        "row": 1,
+        "x_um": 13500.0,
+        "y_um": 10900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          20,
+          22,
+          11
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 7,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 22,
+        "col": 2,
+        "row": 2,
+        "x_um": 13500.0,
+        "y_um": 13500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          21,
+          23,
+          32
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 12,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 23,
+        "col": 2,
+        "row": 3,
+        "x_um": 13500.0,
+        "y_um": 16100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          22,
+          24,
+          13
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 17,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 24,
+        "col": 2,
+        "row": 4,
+        "x_um": 13500.0,
+        "y_um": 18700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          23,
+          25,
+          34
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 22,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 25,
+        "col": 2,
+        "row": 5,
+        "x_um": 13500.0,
+        "y_um": 21300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          24,
+          26,
+          15
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 27,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 26,
+        "col": 2,
+        "row": 6,
+        "x_um": 13500.0,
+        "y_um": 23900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          25,
+          27,
+          36
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 32,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 27,
+        "col": 2,
+        "row": 7,
+        "x_um": 13500.0,
+        "y_um": 26500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          26,
+          28,
+          17
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 37,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 28,
+        "col": 2,
+        "row": 8,
+        "x_um": 13500.0,
+        "y_um": 29100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          27,
+          29,
+          38
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 42,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 29,
+        "col": 2,
+        "row": 9,
+        "x_um": 13500.0,
+        "y_um": 31700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "data",
+        "neighbors": [
+          28,
+          19,
+          39
+        ],
+        "readout_bus_id": 2,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 47,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 30,
+        "col": 3,
+        "row": 0,
+        "x_um": 16100.0,
+        "y_um": 8300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          20,
+          40
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 3,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 31,
+        "col": 3,
+        "row": 1,
+        "x_um": 16100.0,
+        "y_um": 10900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          32,
+          41
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 8,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 32,
+        "col": 3,
+        "row": 2,
+        "x_um": 16100.0,
+        "y_um": 13500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 1,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          31,
+          22
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 13,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 33,
+        "col": 3,
+        "row": 3,
+        "x_um": 16100.0,
+        "y_um": 16100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          34,
+          43
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 18,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 34,
+        "col": 3,
+        "row": 4,
+        "x_um": 16100.0,
+        "y_um": 18700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          33,
+          24
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 23,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 35,
+        "col": 3,
+        "row": 5,
+        "x_um": 16100.0,
+        "y_um": 21300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          36,
+          45
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 28,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 36,
+        "col": 3,
+        "row": 6,
+        "x_um": 16100.0,
+        "y_um": 23900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          35,
+          26
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 33,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 37,
+        "col": 3,
+        "row": 7,
+        "x_um": 16100.0,
+        "y_um": 26500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          38,
+          47
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 38,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 38,
+        "col": 3,
+        "row": 8,
+        "x_um": 16100.0,
+        "y_um": 29100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          37,
+          28
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 43,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 39,
+        "col": 3,
+        "row": 9,
+        "x_um": 16100.0,
+        "y_um": 31700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          49,
+          29
+        ],
+        "readout_bus_id": 3,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 48,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 40,
+        "col": 4,
+        "row": 0,
+        "x_um": 18700.0,
+        "y_um": 8300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          41,
+          50,
+          30
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 4,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 41,
+        "col": 4,
+        "row": 1,
+        "x_um": 18700.0,
+        "y_um": 10900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          40,
+          42,
+          31
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 9,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 42,
+        "col": 4,
+        "row": 2,
+        "x_um": 18700.0,
+        "y_um": 13500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          41,
+          43,
+          52
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 14,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 43,
+        "col": 4,
+        "row": 3,
+        "x_um": 18700.0,
+        "y_um": 16100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          42,
+          44,
+          33
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 19,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 44,
+        "col": 4,
+        "row": 4,
+        "x_um": 18700.0,
+        "y_um": 18700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          43,
+          45,
+          54
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 24,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 45,
+        "col": 4,
+        "row": 5,
+        "x_um": 18700.0,
+        "y_um": 21300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          44,
+          46,
+          35
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 29,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 46,
+        "col": 4,
+        "row": 6,
+        "x_um": 18700.0,
+        "y_um": 23900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          45,
+          47,
+          56
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 34,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 47,
+        "col": 4,
+        "row": 7,
+        "x_um": 18700.0,
+        "y_um": 26500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          46,
+          48,
+          37
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 39,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 48,
+        "col": 4,
+        "row": 8,
+        "x_um": 18700.0,
+        "y_um": 29100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          47,
+          49,
+          58
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 44,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 49,
+        "col": 4,
+        "row": 9,
+        "x_um": 18700.0,
+        "y_um": 31700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          48,
+          39,
+          59
+        ],
+        "readout_bus_id": 4,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 49,
+        "drive_edge": "LEFT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 50,
+        "col": 5,
+        "row": 0,
+        "x_um": 21300.0,
+        "y_um": 8300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          40,
+          60
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 50,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 51,
+        "col": 5,
+        "row": 1,
+        "x_um": 21300.0,
+        "y_um": 10900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          52,
+          61
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 55,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 52,
+        "col": 5,
+        "row": 2,
+        "x_um": 21300.0,
+        "y_um": 13500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          51,
+          42
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 60,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 53,
+        "col": 5,
+        "row": 3,
+        "x_um": 21300.0,
+        "y_um": 16100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          54,
+          63
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 65,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 54,
+        "col": 5,
+        "row": 4,
+        "x_um": 21300.0,
+        "y_um": 18700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          53,
+          44
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 70,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 55,
+        "col": 5,
+        "row": 5,
+        "x_um": 21300.0,
+        "y_um": 21300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          56,
+          65
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 75,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 56,
+        "col": 5,
+        "row": 6,
+        "x_um": 21300.0,
+        "y_um": 23900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          55,
+          46
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 80,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 57,
+        "col": 5,
+        "row": 7,
+        "x_um": 21300.0,
+        "y_um": 26500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          58,
+          67
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 85,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 58,
+        "col": 5,
+        "row": 8,
+        "x_um": 21300.0,
+        "y_um": 29100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          57,
+          48
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 90,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 59,
+        "col": 5,
+        "row": 9,
+        "x_um": 21300.0,
+        "y_um": 31700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          69,
+          49
+        ],
+        "readout_bus_id": 5,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 95,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 60,
+        "col": 6,
+        "row": 0,
+        "x_um": 23900.0,
+        "y_um": 8300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          61,
+          70,
+          50
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 51,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 61,
+        "col": 6,
+        "row": 1,
+        "x_um": 23900.0,
+        "y_um": 10900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          60,
+          62,
+          51
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 56,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 62,
+        "col": 6,
+        "row": 2,
+        "x_um": 23900.0,
+        "y_um": 13500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          61,
+          63,
+          72
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 61,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 63,
+        "col": 6,
+        "row": 3,
+        "x_um": 23900.0,
+        "y_um": 16100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          62,
+          64,
+          53
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 66,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 64,
+        "col": 6,
+        "row": 4,
+        "x_um": 23900.0,
+        "y_um": 18700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          63,
+          65,
+          74
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 71,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 65,
+        "col": 6,
+        "row": 5,
+        "x_um": 23900.0,
+        "y_um": 21300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 2,
+        "logical_role": "data",
+        "neighbors": [
+          64,
+          66,
+          55
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 76,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 66,
+        "col": 6,
+        "row": 6,
+        "x_um": 23900.0,
+        "y_um": 23900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          65,
+          67,
+          76
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 81,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 67,
+        "col": 6,
+        "row": 7,
+        "x_um": 23900.0,
+        "y_um": 26500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          66,
+          68,
+          57
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 86,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 68,
+        "col": 6,
+        "row": 8,
+        "x_um": 23900.0,
+        "y_um": 29100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          67,
+          69,
+          78
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 91,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 69,
+        "col": 6,
+        "row": 9,
+        "x_um": 23900.0,
+        "y_um": 31700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          68,
+          59,
+          79
+        ],
+        "readout_bus_id": 6,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 96,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 70,
+        "col": 7,
+        "row": 0,
+        "x_um": 26500.0,
+        "y_um": 8300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          60,
+          80
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 52,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 71,
+        "col": 7,
+        "row": 1,
+        "x_um": 26500.0,
+        "y_um": 10900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          72,
+          81
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 57,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 72,
+        "col": 7,
+        "row": 2,
+        "x_um": 26500.0,
+        "y_um": 13500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          71,
+          62
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 62,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 73,
+        "col": 7,
+        "row": 3,
+        "x_um": 26500.0,
+        "y_um": 16100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          74,
+          83
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 67,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 74,
+        "col": 7,
+        "row": 4,
+        "x_um": 26500.0,
+        "y_um": 18700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          73,
+          64
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 72,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 75,
+        "col": 7,
+        "row": 5,
+        "x_um": 26500.0,
+        "y_um": 21300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          76,
+          85
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 77,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 76,
+        "col": 7,
+        "row": 6,
+        "x_um": 26500.0,
+        "y_um": 23900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          75,
+          66
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 82,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 77,
+        "col": 7,
+        "row": 7,
+        "x_um": 26500.0,
+        "y_um": 26500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          78,
+          87
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 87,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 78,
+        "col": 7,
+        "row": 8,
+        "x_um": 26500.0,
+        "y_um": 29100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          77,
+          68
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 92,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 79,
+        "col": 7,
+        "row": 9,
+        "x_um": 26500.0,
+        "y_um": 31700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          89,
+          69
+        ],
+        "readout_bus_id": 7,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 97,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 80,
+        "col": 8,
+        "row": 0,
+        "x_um": 29100.0,
+        "y_um": 8300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          81,
+          90,
+          70
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 53,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 81,
+        "col": 8,
+        "row": 1,
+        "x_um": 29100.0,
+        "y_um": 10900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          80,
+          82,
+          71
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 58,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 82,
+        "col": 8,
+        "row": 2,
+        "x_um": 29100.0,
+        "y_um": 13500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          81,
+          83,
+          92
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 63,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 83,
+        "col": 8,
+        "row": 3,
+        "x_um": 29100.0,
+        "y_um": 16100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          82,
+          84,
+          73
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 68,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 84,
+        "col": 8,
+        "row": 4,
+        "x_um": 29100.0,
+        "y_um": 18700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          83,
+          85,
+          94
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 73,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 85,
+        "col": 8,
+        "row": 5,
+        "x_um": 29100.0,
+        "y_um": 21300.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          84,
+          86,
+          75
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 78,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 86,
+        "col": 8,
+        "row": 6,
+        "x_um": 29100.0,
+        "y_um": 23900.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          85,
+          87,
+          96
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 83,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 87,
+        "col": 8,
+        "row": 7,
+        "x_um": 29100.0,
+        "y_um": 26500.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          86,
+          88,
+          77
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 88,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 88,
+        "col": 8,
+        "row": 8,
+        "x_um": 29100.0,
+        "y_um": 29100.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          87,
+          89,
+          98
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 93,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 89,
+        "col": 8,
+        "row": 9,
+        "x_um": 29100.0,
+        "y_um": 31700.0,
+        "transmon_type": "vertex",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "data",
+        "neighbors": [
+          88,
+          79,
+          99
+        ],
+        "readout_bus_id": 8,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 98,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 90,
+        "col": 9,
+        "row": 0,
+        "x_um": 31700.0,
+        "y_um": 8300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "z_ancilla",
+        "neighbors": [
+          80
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 6.3,
+        "drive_pad_id": 54,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 91,
+        "col": 9,
+        "row": 1,
+        "x_um": 31700.0,
+        "y_um": 10900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "z_ancilla",
+        "neighbors": [
+          92
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 6.43,
+        "drive_pad_id": 59,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 92,
+        "col": 9,
+        "row": 2,
+        "x_um": 31700.0,
+        "y_um": 13500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          91,
+          82
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 6.56,
+        "drive_pad_id": 64,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 93,
+        "col": 9,
+        "row": 3,
+        "x_um": 31700.0,
+        "y_um": 16100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "z_ancilla",
+        "neighbors": [
+          94
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 6.69,
+        "drive_pad_id": 69,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 94,
+        "col": 9,
+        "row": 4,
+        "x_um": 31700.0,
+        "y_um": 18700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          93,
+          84
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 6.82,
+        "drive_pad_id": 74,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 95,
+        "col": 9,
+        "row": 5,
+        "x_um": 31700.0,
+        "y_um": 21300.0,
+        "transmon_type": "edge",
+        "freq_band": "f_C",
+        "f_01_GHz": 5.25,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "z_ancilla",
+        "neighbors": [
+          96
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 6.95,
+        "drive_pad_id": 79,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 96,
+        "col": 9,
+        "row": 6,
+        "x_um": 31700.0,
+        "y_um": 23900.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          95,
+          86
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 7.08,
+        "drive_pad_id": 84,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 97,
+        "col": 9,
+        "row": 7,
+        "x_um": 31700.0,
+        "y_um": 26500.0,
+        "transmon_type": "edge",
+        "freq_band": "f_B",
+        "f_01_GHz": 5.05,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "z_ancilla",
+        "neighbors": [
+          98
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 7.21,
+        "drive_pad_id": 89,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 98,
+        "col": 9,
+        "row": 8,
+        "x_um": 31700.0,
+        "y_um": 29100.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "x_ancilla",
+        "neighbors": [
+          97,
+          88
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 7.34,
+        "drive_pad_id": 94,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      },
+      {
+        "id": 99,
+        "col": 9,
+        "row": 9,
+        "x_um": 31700.0,
+        "y_um": 31700.0,
+        "transmon_type": "edge",
+        "freq_band": "f_A",
+        "f_01_GHz": 4.85,
+        "anharmonicity_alpha_MHz": -230.0,
+        "EJ_EC_ratio": 65.0,
+        "target_LJ_nH": 11.5,
+        "coupling_strength_J_MHz": 3.2,
+        "logical_patch": 3,
+        "logical_role": "z_ancilla",
+        "neighbors": [
+          89
+        ],
+        "readout_bus_id": 9,
+        "readout_freq_GHz": 7.47,
+        "drive_pad_id": 99,
+        "drive_edge": "RIGHT",
+        "pocket": {
+          "pad_width_um": 420.0,
+          "pad_height_um": 160.0,
+          "pad_gap_um": 16.0,
+          "pocket_vacuum_gap_um": 35.0,
+          "total_pocket_width_um": 490.0,
+          "total_pocket_height_um": 406.0,
+          "target_T1_us": 150.0
+        }
+      }
+    ]
+  },
+  "readout_system": {
+    "num_vertical_buses": 10,
+    "qubits_per_bus": 10,
+    "bus_pitch_um": 2600.0,
+    "bus_cpw_geometry": {
+      "width_um": 20.0,
+      "gap_um": 12.0,
+      "Z0_ohm": 50.0
+    },
+    "purcell_filter": {
+      "type": "lambda/2 CPW bandpass",
+      "center_frequency_GHz": 6.85,
+      "bandwidth_GHz": 1.2,
+      "quality_factor_Q": 5.71,
+      "physical_length_um": 8780.0,
+      "effective_eps_r": 6.225,
+      "purcell_limit_T1_us": 550.0
+    },
+    "readout_resonators": {
+      "type": "lambda/4 CPW staggered notch resonators",
+      "num_tones_per_bus": 10,
+      "base_frequency_GHz": 6.3,
+      "channel_spacing_MHz": 130.0,
+      "frequencies_GHz": [
+        6.3,
+        6.43,
+        6.56,
+        6.69,
+        6.82,
+        6.95,
+        7.08,
+        7.21,
+        7.34,
+        7.47
+      ],
+      "dispersive_shift_chi_MHz": 1.25,
+      "resonator_qubit_coupling_g_MHz": 65.0
+    },
+    "perimeter_pads": [
+      {
+        "pad_id": 0,
+        "bus_id": 0,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 8300.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 10,
+        "bus_id": 0,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 8300.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 1,
+        "bus_id": 1,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 10900.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 11,
+        "bus_id": 1,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 10900.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 2,
+        "bus_id": 2,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 13500.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 12,
+        "bus_id": 2,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 13500.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 3,
+        "bus_id": 3,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 16100.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 13,
+        "bus_id": 3,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 16100.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 4,
+        "bus_id": 4,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 18700.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 14,
+        "bus_id": 4,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 18700.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 5,
+        "bus_id": 5,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 21300.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 15,
+        "bus_id": 5,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 21300.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 6,
+        "bus_id": 6,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 23900.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 16,
+        "bus_id": 6,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 23900.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 7,
+        "bus_id": 7,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 26500.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 17,
+        "bus_id": 7,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 26500.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 8,
+        "bus_id": 8,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 29100.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 18,
+        "bus_id": 8,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 29100.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 9,
+        "bus_id": 9,
+        "type": "READOUT_IN",
+        "edge": "TOP",
+        "x_um": 31700.0,
+        "y_um": 39475.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 19,
+        "bus_id": 9,
+        "type": "READOUT_OUT",
+        "edge": "BOTTOM",
+        "x_um": 31700.0,
+        "y_um": 525.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      }
+    ]
+  },
+  "xy_drive_routing": {
+    "num_drive_lines": 100,
+    "left_edge_pads": 50,
+    "right_edge_pads": 50,
+    "pad_pitch_um": 740.0,
+    "corridor_width_um": 1400.0,
+    "trace_pitch_um": 220.0,
+    "cpw_geometry_long_corridor": {
+      "width_um": 20.0,
+      "gap_um": 12.0,
+      "Z0_ohm": 50.0
+    },
+    "cpw_geometry_pocket_taper": {
+      "width_um": 10.0,
+      "gap_um": 6.0,
+      "Z0_ohm": 50.0
+    },
+    "taper_length_um": 150.0,
+    "capacitive_coupling_gap_um": 12.0,
+    "crosstalk_target_S31_dB": -50.0,
+    "perimeter_pads": [
+      {
+        "pad_id": 0,
+        "edge": "LEFT",
+        "row_index": 0,
+        "x_um": 525.0,
+        "y_um": 1870.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 1,
+        "edge": "LEFT",
+        "row_index": 1,
+        "x_um": 1100.0,
+        "y_um": 2610.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 2,
+        "edge": "LEFT",
+        "row_index": 2,
+        "x_um": 525.0,
+        "y_um": 3350.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 3,
+        "edge": "LEFT",
+        "row_index": 3,
+        "x_um": 1100.0,
+        "y_um": 4090.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 4,
+        "edge": "LEFT",
+        "row_index": 4,
+        "x_um": 525.0,
+        "y_um": 4830.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 5,
+        "edge": "LEFT",
+        "row_index": 5,
+        "x_um": 1100.0,
+        "y_um": 5570.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 6,
+        "edge": "LEFT",
+        "row_index": 6,
+        "x_um": 525.0,
+        "y_um": 6310.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 7,
+        "edge": "LEFT",
+        "row_index": 7,
+        "x_um": 1100.0,
+        "y_um": 7050.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 8,
+        "edge": "LEFT",
+        "row_index": 8,
+        "x_um": 525.0,
+        "y_um": 7790.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 9,
+        "edge": "LEFT",
+        "row_index": 9,
+        "x_um": 1100.0,
+        "y_um": 8530.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 10,
+        "edge": "LEFT",
+        "row_index": 10,
+        "x_um": 525.0,
+        "y_um": 9270.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 11,
+        "edge": "LEFT",
+        "row_index": 11,
+        "x_um": 1100.0,
+        "y_um": 10010.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 12,
+        "edge": "LEFT",
+        "row_index": 12,
+        "x_um": 525.0,
+        "y_um": 10750.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 13,
+        "edge": "LEFT",
+        "row_index": 13,
+        "x_um": 1100.0,
+        "y_um": 11490.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 14,
+        "edge": "LEFT",
+        "row_index": 14,
+        "x_um": 525.0,
+        "y_um": 12230.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 15,
+        "edge": "LEFT",
+        "row_index": 15,
+        "x_um": 1100.0,
+        "y_um": 12970.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 16,
+        "edge": "LEFT",
+        "row_index": 16,
+        "x_um": 525.0,
+        "y_um": 13710.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 17,
+        "edge": "LEFT",
+        "row_index": 17,
+        "x_um": 1100.0,
+        "y_um": 14450.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 18,
+        "edge": "LEFT",
+        "row_index": 18,
+        "x_um": 525.0,
+        "y_um": 15190.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 19,
+        "edge": "LEFT",
+        "row_index": 19,
+        "x_um": 1100.0,
+        "y_um": 15930.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 20,
+        "edge": "LEFT",
+        "row_index": 20,
+        "x_um": 525.0,
+        "y_um": 16670.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 21,
+        "edge": "LEFT",
+        "row_index": 21,
+        "x_um": 1100.0,
+        "y_um": 17410.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 22,
+        "edge": "LEFT",
+        "row_index": 22,
+        "x_um": 525.0,
+        "y_um": 18150.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 23,
+        "edge": "LEFT",
+        "row_index": 23,
+        "x_um": 1100.0,
+        "y_um": 18890.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 24,
+        "edge": "LEFT",
+        "row_index": 24,
+        "x_um": 525.0,
+        "y_um": 19630.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 25,
+        "edge": "LEFT",
+        "row_index": 25,
+        "x_um": 1100.0,
+        "y_um": 20370.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 26,
+        "edge": "LEFT",
+        "row_index": 26,
+        "x_um": 525.0,
+        "y_um": 21110.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 27,
+        "edge": "LEFT",
+        "row_index": 27,
+        "x_um": 1100.0,
+        "y_um": 21850.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 28,
+        "edge": "LEFT",
+        "row_index": 28,
+        "x_um": 525.0,
+        "y_um": 22590.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 29,
+        "edge": "LEFT",
+        "row_index": 29,
+        "x_um": 1100.0,
+        "y_um": 23330.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 30,
+        "edge": "LEFT",
+        "row_index": 30,
+        "x_um": 525.0,
+        "y_um": 24070.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 31,
+        "edge": "LEFT",
+        "row_index": 31,
+        "x_um": 1100.0,
+        "y_um": 24810.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 32,
+        "edge": "LEFT",
+        "row_index": 32,
+        "x_um": 525.0,
+        "y_um": 25550.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 33,
+        "edge": "LEFT",
+        "row_index": 33,
+        "x_um": 1100.0,
+        "y_um": 26290.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 34,
+        "edge": "LEFT",
+        "row_index": 34,
+        "x_um": 525.0,
+        "y_um": 27030.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 35,
+        "edge": "LEFT",
+        "row_index": 35,
+        "x_um": 1100.0,
+        "y_um": 27770.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 36,
+        "edge": "LEFT",
+        "row_index": 36,
+        "x_um": 525.0,
+        "y_um": 28510.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 37,
+        "edge": "LEFT",
+        "row_index": 37,
+        "x_um": 1100.0,
+        "y_um": 29250.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 38,
+        "edge": "LEFT",
+        "row_index": 38,
+        "x_um": 525.0,
+        "y_um": 29990.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 39,
+        "edge": "LEFT",
+        "row_index": 39,
+        "x_um": 1100.0,
+        "y_um": 30730.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 40,
+        "edge": "LEFT",
+        "row_index": 40,
+        "x_um": 525.0,
+        "y_um": 31470.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 41,
+        "edge": "LEFT",
+        "row_index": 41,
+        "x_um": 1100.0,
+        "y_um": 32210.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 42,
+        "edge": "LEFT",
+        "row_index": 42,
+        "x_um": 525.0,
+        "y_um": 32950.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 43,
+        "edge": "LEFT",
+        "row_index": 43,
+        "x_um": 1100.0,
+        "y_um": 33690.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 44,
+        "edge": "LEFT",
+        "row_index": 44,
+        "x_um": 525.0,
+        "y_um": 34430.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 45,
+        "edge": "LEFT",
+        "row_index": 45,
+        "x_um": 1100.0,
+        "y_um": 35170.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 46,
+        "edge": "LEFT",
+        "row_index": 46,
+        "x_um": 525.0,
+        "y_um": 35910.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 47,
+        "edge": "LEFT",
+        "row_index": 47,
+        "x_um": 1100.0,
+        "y_um": 36650.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 48,
+        "edge": "LEFT",
+        "row_index": 48,
+        "x_um": 525.0,
+        "y_um": 37390.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 49,
+        "edge": "LEFT",
+        "row_index": 49,
+        "x_um": 1100.0,
+        "y_um": 38130.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 50,
+        "edge": "RIGHT",
+        "row_index": 0,
+        "x_um": 39475.0,
+        "y_um": 1870.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 51,
+        "edge": "RIGHT",
+        "row_index": 1,
+        "x_um": 38900.0,
+        "y_um": 2610.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 52,
+        "edge": "RIGHT",
+        "row_index": 2,
+        "x_um": 39475.0,
+        "y_um": 3350.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 53,
+        "edge": "RIGHT",
+        "row_index": 3,
+        "x_um": 38900.0,
+        "y_um": 4090.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 54,
+        "edge": "RIGHT",
+        "row_index": 4,
+        "x_um": 39475.0,
+        "y_um": 4830.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 55,
+        "edge": "RIGHT",
+        "row_index": 5,
+        "x_um": 38900.0,
+        "y_um": 5570.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 56,
+        "edge": "RIGHT",
+        "row_index": 6,
+        "x_um": 39475.0,
+        "y_um": 6310.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 57,
+        "edge": "RIGHT",
+        "row_index": 7,
+        "x_um": 38900.0,
+        "y_um": 7050.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 58,
+        "edge": "RIGHT",
+        "row_index": 8,
+        "x_um": 39475.0,
+        "y_um": 7790.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 59,
+        "edge": "RIGHT",
+        "row_index": 9,
+        "x_um": 38900.0,
+        "y_um": 8530.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 60,
+        "edge": "RIGHT",
+        "row_index": 10,
+        "x_um": 39475.0,
+        "y_um": 9270.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 61,
+        "edge": "RIGHT",
+        "row_index": 11,
+        "x_um": 38900.0,
+        "y_um": 10010.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 62,
+        "edge": "RIGHT",
+        "row_index": 12,
+        "x_um": 39475.0,
+        "y_um": 10750.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 63,
+        "edge": "RIGHT",
+        "row_index": 13,
+        "x_um": 38900.0,
+        "y_um": 11490.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 64,
+        "edge": "RIGHT",
+        "row_index": 14,
+        "x_um": 39475.0,
+        "y_um": 12230.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 65,
+        "edge": "RIGHT",
+        "row_index": 15,
+        "x_um": 38900.0,
+        "y_um": 12970.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 66,
+        "edge": "RIGHT",
+        "row_index": 16,
+        "x_um": 39475.0,
+        "y_um": 13710.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 67,
+        "edge": "RIGHT",
+        "row_index": 17,
+        "x_um": 38900.0,
+        "y_um": 14450.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 68,
+        "edge": "RIGHT",
+        "row_index": 18,
+        "x_um": 39475.0,
+        "y_um": 15190.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 69,
+        "edge": "RIGHT",
+        "row_index": 19,
+        "x_um": 38900.0,
+        "y_um": 15930.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 70,
+        "edge": "RIGHT",
+        "row_index": 20,
+        "x_um": 39475.0,
+        "y_um": 16670.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 71,
+        "edge": "RIGHT",
+        "row_index": 21,
+        "x_um": 38900.0,
+        "y_um": 17410.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 72,
+        "edge": "RIGHT",
+        "row_index": 22,
+        "x_um": 39475.0,
+        "y_um": 18150.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 73,
+        "edge": "RIGHT",
+        "row_index": 23,
+        "x_um": 38900.0,
+        "y_um": 18890.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 74,
+        "edge": "RIGHT",
+        "row_index": 24,
+        "x_um": 39475.0,
+        "y_um": 19630.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 75,
+        "edge": "RIGHT",
+        "row_index": 25,
+        "x_um": 38900.0,
+        "y_um": 20370.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 76,
+        "edge": "RIGHT",
+        "row_index": 26,
+        "x_um": 39475.0,
+        "y_um": 21110.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 77,
+        "edge": "RIGHT",
+        "row_index": 27,
+        "x_um": 38900.0,
+        "y_um": 21850.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 78,
+        "edge": "RIGHT",
+        "row_index": 28,
+        "x_um": 39475.0,
+        "y_um": 22590.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 79,
+        "edge": "RIGHT",
+        "row_index": 29,
+        "x_um": 38900.0,
+        "y_um": 23330.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 80,
+        "edge": "RIGHT",
+        "row_index": 30,
+        "x_um": 39475.0,
+        "y_um": 24070.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 81,
+        "edge": "RIGHT",
+        "row_index": 31,
+        "x_um": 38900.0,
+        "y_um": 24810.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 82,
+        "edge": "RIGHT",
+        "row_index": 32,
+        "x_um": 39475.0,
+        "y_um": 25550.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 83,
+        "edge": "RIGHT",
+        "row_index": 33,
+        "x_um": 38900.0,
+        "y_um": 26290.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 84,
+        "edge": "RIGHT",
+        "row_index": 34,
+        "x_um": 39475.0,
+        "y_um": 27030.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 85,
+        "edge": "RIGHT",
+        "row_index": 35,
+        "x_um": 38900.0,
+        "y_um": 27770.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 86,
+        "edge": "RIGHT",
+        "row_index": 36,
+        "x_um": 39475.0,
+        "y_um": 28510.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 87,
+        "edge": "RIGHT",
+        "row_index": 37,
+        "x_um": 38900.0,
+        "y_um": 29250.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 88,
+        "edge": "RIGHT",
+        "row_index": 38,
+        "x_um": 39475.0,
+        "y_um": 29990.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 89,
+        "edge": "RIGHT",
+        "row_index": 39,
+        "x_um": 38900.0,
+        "y_um": 30730.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 90,
+        "edge": "RIGHT",
+        "row_index": 40,
+        "x_um": 39475.0,
+        "y_um": 31470.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 91,
+        "edge": "RIGHT",
+        "row_index": 41,
+        "x_um": 38900.0,
+        "y_um": 32210.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 92,
+        "edge": "RIGHT",
+        "row_index": 42,
+        "x_um": 39475.0,
+        "y_um": 32950.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 93,
+        "edge": "RIGHT",
+        "row_index": 43,
+        "x_um": 38900.0,
+        "y_um": 33690.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 94,
+        "edge": "RIGHT",
+        "row_index": 44,
+        "x_um": 39475.0,
+        "y_um": 34430.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 95,
+        "edge": "RIGHT",
+        "row_index": 45,
+        "x_um": 38900.0,
+        "y_um": 35170.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 96,
+        "edge": "RIGHT",
+        "row_index": 46,
+        "x_um": 39475.0,
+        "y_um": 35910.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 97,
+        "edge": "RIGHT",
+        "row_index": 47,
+        "x_um": 38900.0,
+        "y_um": 36650.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 98,
+        "edge": "RIGHT",
+        "row_index": 48,
+        "x_um": 39475.0,
+        "y_um": 37390.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      },
+      {
+        "pad_id": 99,
+        "edge": "RIGHT",
+        "row_index": 49,
+        "x_um": 38900.0,
+        "y_um": 38130.0,
+        "signal_size_um": [
+          300.0,
+          350.0
+        ],
+        "ground_size_um": [
+          350.0,
+          350.0
+        ],
+        "lateral_gap_um": 115.0
+      }
+    ]
+  },
+  "perimeter_gsg_launchers": {
+    "total_signal_pads": 120,
+    "total_ground_pads": 240,
+    "signal_pad_dimensions_um": [
+      300.0,
+      350.0
+    ],
+    "ground_pad_dimensions_um": [
+      350.0,
+      350.0
+    ],
+    "gsg_lateral_gap_um": 115.0,
+    "coplanar_taper_length_um": 250.0,
+    "wire_bond_spec": {
+      "type": "Ultrasonic Wedge Wire Bond",
+      "material": "Al-1%Si",
+      "diameter_um": 25.0,
+      "wires_per_pad": 2,
+      "redundancy": "Dual-bond parallel connection",
+      "effective_inductance_nH": 0.25,
+      "loop_height_um": 220.0,
+      "span_um": 550.0
+    },
+    "die_edge_clearance_um": 350.0
+  },
+  "box_mode_and_litho_mitigations": {
+    "ground_plane_moats": {
+      "moat_width_um": 10.0,
+      "x_lines_um": [
+        5000.0,
+        10000.0,
+        15000.0,
+        20000.0,
+        25000.0,
+        30000.0,
+        35000.0
+      ],
+      "y_lines_um": [
+        5000.0,
+        10000.0,
+        15000.0,
+        20000.0,
+        25000.0,
+        30000.0,
+        35000.0
+      ],
+      "max_island_size_um": [
+        5000.0,
+        5000.0
+      ],
+      "num_islands": 64
+    },
+    "vortex_pinning": {
+      "hole_size_um": [
+        4.0,
+        4.0
+      ],
+      "hole_pitch_um": 40.0,
+      "pattern": "Square periodic grid across ground plane"
+    },
+    "stepper_stitching": {
+      "reticle_field_size_mm": [
+        20.0,
+        20.0
+      ],
+      "stitch_boundaries_um": {
+        "x": 20000.0,
+        "y": 20000.0
+      },
+      "vernier_pitch_um": 10.0,
+      "corner_crosshairs_um": [
+        [
+          1500.0,
+          1500.0
+        ],
+        [
+          38500.0,
+          1500.0
+        ],
+        [
+          1500.0,
+          38500.0
+        ],
+        [
+          38500.0,
+          38500.0
+        ]
+      ]
+    }
+  },
+  "cryo_packaging": {
+    "carrier_pcb": {
+      "material": "Rogers RO4350B",
+      "pocket_dimensions_um": [
+        40300.0,
+        40300.0,
+        500.0
+      ],
+      "die_to_pcb_clearance_um": 150.0,
+      "die_attach": {
+        "method": "Center-only silver epoxy dot",
+        "dot_size_um": [
+          4000.0,
+          4000.0
+        ],
+        "purpose": "Zero thermal stress pinning at edges; free radial contraction"
+      }
+    },
+    "thermal_contraction": {
+      "temperature_range_K": [
+        300.0,
+        0.01
+      ],
+      "silicon_contraction_ratio": 0.00045,
+      "copper_pcb_contraction_ratio": 0.0032,
+      "differential_radial_shift_um": 55.0,
+      "wire_loop_relief_um": 220.0
+    },
+    "cavity_lid": {
+      "material": "OFHC Copper (Oxygen-Free High Conductivity)",
+      "clearance_um": 300.0,
+      "cutoff_frequency_GHz": 9.85
+    }
+  }
+}

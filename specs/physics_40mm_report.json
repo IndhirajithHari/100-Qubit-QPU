@@ -1,0 +1,102 @@
+{
+  "physics_validation_summary": {
+    "status": "PASSED",
+    "all_constraints_met": true
+  },
+  "transmon_hamiltonian": {
+    "f_A": {
+      "target_f01_GHz": 4.85,
+      "modeled_f01_GHz": 4.85,
+      "anharmonicity_alpha_MHz": -230.0,
+      "EC_MHz": 230.0,
+      "C_total_fF": 84.22,
+      "EJ_GHz": 14.025,
+      "EJ_EC_ratio": 60.98,
+      "LJ_nH": 11.65,
+      "avg_dispersive_shift_chi_MHz": -0.211
+    },
+    "f_B": {
+      "target_f01_GHz": 5.05,
+      "modeled_f01_GHz": 5.05,
+      "anharmonicity_alpha_MHz": -230.0,
+      "EC_MHz": 230.0,
+      "C_total_fF": 84.22,
+      "EJ_GHz": 15.151,
+      "EJ_EC_ratio": 65.88,
+      "LJ_nH": 10.79,
+      "avg_dispersive_shift_chi_MHz": -0.256
+    },
+    "f_C": {
+      "target_f01_GHz": 5.25,
+      "modeled_f01_GHz": 5.25,
+      "anharmonicity_alpha_MHz": -230.0,
+      "EC_MHz": 230.0,
+      "C_total_fF": 84.22,
+      "EJ_GHz": 16.321,
+      "EJ_EC_ratio": 70.96,
+      "LJ_nH": 10.02,
+      "avg_dispersive_shift_chi_MHz": -0.319
+    }
+  },
+  "readout_purcell_protection": {
+    "purcell_filter_center_GHz": 6.85,
+    "purcell_filter_bandwidth_GHz": 1.2,
+    "bare_purcell_T1_us": 48.8,
+    "filtered_purcell_T1_us": 12042.3,
+    "target_T1_us": 500.0,
+    "status": "PASSED"
+  },
+  "gates_and_crosstalk": {
+    "single_qubit_gate_time_ns": 30.0,
+    "two_qubit_cross_resonance_time_ns": 180.0,
+    "drive_corridor_pitch_um": 220.0,
+    "metal_isolation_barrier_um": 176.0,
+    "inter_trace_crosstalk_S31_dB": -54.8,
+    "target_S31_dB": -50.0,
+    "status": "PASSED"
+  },
+  "launchers_and_wire_bonds": {
+    "signal_pad_dimensions_um": [
+      300.0,
+      350.0
+    ],
+    "ground_pad_dimensions_um": [
+      350.0,
+      350.0
+    ],
+    "lateral_gap_um": 115.0,
+    "coplanar_taper_length_um": 250.0,
+    "taper_return_loss_S11_8GHz_dB": -23.2,
+    "target_S11_dB": -22.0,
+    "single_bond_inductance_nH": 0.35,
+    "dual_bond_parallel_inductance_nH": 0.2,
+    "target_inductance_nH": 0.25,
+    "status": "PASSED"
+  },
+  "box_mode_suppression": {
+    "unsegmented_die_box_mode_GHz": 1.57,
+    "moated_ground_plane_island_size_um": [
+      4800.0,
+      4800.0
+    ],
+    "moated_die_box_mode_GHz": 13.05,
+    "stepped_copper_lid_clearance_um": 300.0,
+    "effective_box_mode_cutoff_GHz": 9.85,
+    "target_cutoff_GHz": 9.5,
+    "status": "PASSED"
+  },
+  "cryogenic_thermal_packaging": {
+    "temperature_gradient_K": "300 K -> 0.010 K",
+    "silicon_thermal_contraction_ratio": 0.00045,
+    "pcb_thermal_contraction_ratio": 0.0032,
+    "differential_radial_shift_um": 55.0,
+    "target_radial_shift_um": 60.0,
+    "die_pocket_gap_nominal_um": 150.0,
+    "die_pocket_gap_cold_um": 205.0,
+    "wire_loop_height_nominal_um": 220.0,
+    "wire_loop_height_cold_um": 182.4,
+    "aluminum_wire_elastic_strain_pct": 8.87,
+    "die_anchor_method": "Center-only silver epoxy dot (4 mm x 4 mm), zero perimeter constraint",
+    "status": "PASSED"
+  }
+}
