@@ -1,0 +1,33 @@
+{
+  "overall_status": "PASSED",
+  "checks": {
+    "layer_purity": {
+      "status": "PASSED",
+      "layers": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "zero_shorts_crossovers": {
+      "status": "PASSED",
+      "drive_readout_intersections": 0,
+      "drive_qubit_intersections": 0,
+      "readout_qubit_intersections": 0,
+      "signal_ground_intersections": 0
+    },
+    "pad_and_litho_rules": {
+      "status": "PASSED",
+      "signal_pads_count": 120,
+      "ground_pads_count": 240,
+      "min_signal_pad_area_um2": 105000.0,
+      "min_ground_pad_area_um2": 122500.0,
+      "top_bottom_pitch_um": 2600.0,
+      "left_right_pitch_um": 740.0,
+      "die_edge_clearance_um": 350.0,
+      "min_feature_width_um": 6.0,
+      "min_feature_gap_um": 12.0
+    }
+  }
+}

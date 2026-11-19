@@ -1,0 +1,39 @@
+{
+  "suite_name": "QPU-100Q-HEAVYHEX-40MM Firmware Verification",
+  "overall_status": "PASSED",
+  "tests": {
+    "channel_mapping": {
+      "status": "PASSED",
+      "total_1q_channels": 100,
+      "total_readout_buses": 10,
+      "unique_pad_mappings": 100
+    },
+    "1q_drag_pulse": {
+      "status": "PASSED",
+      "avg_spectral_leakage_suppression_dB": 69.05,
+      "avg_1q_fidelity_pct": 99.975
+    },
+    "2q_cr_gates": {
+      "status": "PASSED",
+      "avg_2q_cr_fidelity_pct": 99.7,
+      "effective_cr_gate_time_ns": 180.0
+    },
+    "multiplexed_readout": {
+      "status": "PASSED",
+      "avg_assignment_fidelity_pct": 100.0,
+      "multiplexed_tones_per_bus": 10,
+      "total_readout_tones": 100
+    },
+    "tof_deskewing": {
+      "status": "PASSED",
+      "raw_skew_ps": 86.5,
+      "residual_jitter_ps": 0.05
+    },
+    "nyquist_and_aliasing": {
+      "status": "PASSED",
+      "guard_band_MHz": 1050.0,
+      "awg_sample_rate_GSas": 5.0,
+      "adc_sample_rate_GSas": 2.5
+    }
+  }
+}
